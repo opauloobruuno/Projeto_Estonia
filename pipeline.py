@@ -31,7 +31,7 @@ def _load_and_clean(input_csv: str) -> tuple[pd.DataFrame, pd.DataFrame]:
     df = df.dropna(subset=["ts"])
 
     # Remove timestamps that are in the future relative to "now" (UTC).
-    now = pd.Timestamp.utcnow().tz_localize("UTC") if df["ts"].dt.tz is None else pd.Timestamp.utcnow()
+    now = pd.Timestamp.now("UTC").tz_localize("UTC") if df["ts"].dt.tz is None else pd.Timestamp.now("UTC")
     df = df[df["ts"] <= now]
 
     # Normalize to date column for daily aggregations (kept as separate column)
