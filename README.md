@@ -352,6 +352,3 @@ pytest
   - Simples, eficiente e adequado para um ambiente de **batch + leitura**.
 
 ---
-
-Se quiser, posso complementar o projeto com exemplos de notebooks de exploração, dashboards ou integrações adicionais (por exemplo, exportar o `report.json` para um front-end de visualização).
-
