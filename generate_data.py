@@ -18,7 +18,7 @@ EVENT_TYPES = np.array(["page_view", "signup", "purchase", "refund"])
 # - remaining 96.7% split as: 90% page_view, 6.7% signup (mostly page_views)
 EVENT_TYPE_PROBS = np.array([0.90, 0.067, 0.03, 0.003])
 
-COUNTRIES = np.array(["BR", "US", "MX", "CA", "UK"])
+COUNTRIES = np.array(["BR", "US", "MX", "CA", "UK", "DE", "FR", "JP", "AU", "IN"])
 DEVICES = np.array(["ios", "android", "web"])
 
 # Dirty data fractions

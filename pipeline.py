@@ -157,7 +157,7 @@ def _compute_revenue_daily(df: pd.DataFrame) -> list[dict]:
     return rev_df.to_dict(orient="records")
 
 
-def _compute_top_countries(df: pd.DataFrame, top_n: int = 5) -> list[dict]:
+def _compute_top_countries(df: pd.DataFrame, top_n: int = 10) -> list[dict]:
     if df.empty:
         return []
 
